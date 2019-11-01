@@ -7,10 +7,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "firebase": "^7.2.2",
+    "@react-native-community/async-storage": "^1.6.2",
+    "@types/styled-components": "^4.1.20",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-oauth": "^2.1.18"
+    "react-native-oauth": "^2.1.18",
+    "react-native-splash-screen": "^3.2.0",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
@@ -21,9 +24,15 @@
     "@types/react-native": "^0.60.14",
     "@types/react-test-renderer": "^16.9.0",
     "babel-jest": "^24.1.0",
+    "eslint": "^6.6.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "0.54.1",
+    "prettier": "^1.18.2",
     "react-test-renderer": "16.8.6",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^4.1.0",
     "typescript": "^3.6.3"
   },
   "jest": {
