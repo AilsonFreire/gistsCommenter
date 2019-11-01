@@ -18,9 +18,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
+		33E890B40E9F2BBE192D4509 /* libPods-CommentGists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */; };
 		3A7D8E11CC1AAD04CB3EBCAC /* libPods-CommentGists-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB00FD80B8C3DAB0A283C5A /* libPods-CommentGists-tvOSTests.a */; };
-		48A60F5850A283B67B59AE4A /* libPods-CommentGists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */; };
-		7A02B0D7BA6B4308A8A9D909 /* libOAuthManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1D09FC45F14F2988E091A0 /* libOAuthManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A60F5850A283B67B59AE4A /* libPods-CommentGists.a in Frameworks */,
-				7A02B0D7BA6B4308A8A9D909 /* libOAuthManager.a in Frameworks */,
+				33E890B40E9F2BBE192D4509 /* libPods-CommentGists.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,11 +694,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = H8QD6Z5573;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
-					"$(SRCROOT)/../node_modules/react-native/Libraries/LinkingIOS",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CommentGists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -722,11 +716,7 @@
 				CODE_SIGN_ENTITLEMENTS = CommentGists/CommentGists.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H8QD6Z5573;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-oauth/ios/OAuthManager",
-					"$(SRCROOT)/../node_modules/react-native/Libraries/LinkingIOS",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CommentGists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

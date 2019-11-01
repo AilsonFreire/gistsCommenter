@@ -1,6 +1,5 @@
 PODS:
   - boost-for-react-native (1.63.0)
-  - DCTAuth (3.0)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
     - boost-for-react-native
@@ -87,7 +86,6 @@ PODS:
   - yoga (0.60.5.React)
 
 DEPENDENCIES:
-  - DCTAuth (from `https://github.com/danielctull/DCTAuth.git`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -117,8 +115,6 @@ SPEC REPOS:
     - boost-for-react-native
 
 EXTERNAL SOURCES:
-  DCTAuth:
-    :git: https://github.com/danielctull/DCTAuth.git
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -166,14 +162,8 @@ EXTERNAL SOURCES:
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
-CHECKOUT OPTIONS:
-  DCTAuth:
-    :commit: 0a8091a3fc165fb99a6f70cf15b3aed25252dad9
-    :git: https://github.com/danielctull/DCTAuth.git
-
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  DCTAuth: 8add154decd00335d62917828896bba790ce47fd
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
@@ -198,6 +188,6 @@ SPEC CHECKSUMS:
   RNCAsyncStorage: 60a80e72d95bf02a01cace55d3697d9724f0d77f
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: 928628f53d09d806868685417b4430c434bf63d2
+PODFILE CHECKSUM: ff06b91a2aaa594363d62c5b0bde770bb7714ea4
 
 COCOAPODS: 1.8.4
