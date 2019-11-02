@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -20,6 +19,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
 		33E890B40E9F2BBE192D4509 /* libPods-CommentGists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */; };
 		3A7D8E11CC1AAD04CB3EBCAC /* libPods-CommentGists-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB00FD80B8C3DAB0A283C5A /* libPods-CommentGists-tvOSTests.a */; };
+		CD48A5C1C13E43BCB913F671 /* SFNSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +77,7 @@
 		CEE0FB19A992ACAF4FFA5274 /* Pods-CommentGists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists.release.xcconfig"; path = "Target Support Files/Pods-CommentGists/Pods-CommentGists.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "SFNSDisplay-Bold.ttf"; path = "../assets/fonts/SFNSDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +194,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				21AA15C4AEE583B74CB1076A /* Pods */,
 				A5D6D248236C49B200D25AFE /* Recovered References */,
+				F6AE253E0B754D8CA2E9B9C4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -225,6 +227,15 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		F6AE253E0B754D8CA2E9B9C4 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -386,6 +397,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CD48A5C1C13E43BCB913F671 /* SFNSDisplay-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

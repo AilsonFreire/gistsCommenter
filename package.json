@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean": "cd android && gradlew clean && cd .."
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
     "@types/styled-components": "^4.1.20",
+    "apisauce": "^1.1.1",
+    "babel-plugin-styled-components": "^1.10.6",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-splash-screen": "^3.2.0",
