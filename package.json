@@ -5,16 +5,23 @@
   "scripts": {
     "start": "react-native start",
     "test": "jest",
-    "clean": "cd android && gradlew clean && cd .."
+    "clean": "cd android && gradlew clean && cd ..",
+    "lint": "tslint 'src/**/*.{ts, tsx}'"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.6.2",
+    "@testing-library/react-native": "^4.1.0",
     "@types/styled-components": "^4.1.20",
     "apisauce": "^1.1.1",
     "babel-plugin-styled-components": "^1.10.6",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-gesture-handler": "^1.5.0",
+    "react-native-reanimated": "^1.4.0",
+    "react-native-screens": "1.0.0-alpha.23",
     "react-native-splash-screen": "^3.2.0",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
     "styled-components": "^4.4.1"
   },
   "devDependencies": {
@@ -26,7 +33,7 @@
     "@types/react-native": "^0.60.14",
     "@types/react-test-renderer": "^16.9.0",
     "babel-jest": "^24.1.0",
-    "eslint": "^6.6.0",
+    "eslint": "^5.16.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "0.54.1",
     "prettier": "^1.18.2",
@@ -38,7 +45,7 @@
     "typescript": "^3.6.3"
   },
   "jest": {
-    "preset": "react-native",
+    "preset": "@testing-library/react-native",
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -46,6 +53,7 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "coverageDirectory": "__tests__/coverage"
   }
 }

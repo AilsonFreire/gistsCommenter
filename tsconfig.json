@@ -15,10 +15,10 @@
       "@views/*": ["views/*"],
       "@components/*": ["components/*"],
       //   "@styles/*": ["styles/*"],
-      "@util/*": ["util/*"]
-      //   "@services/*": ["services/*"],
+      "@util/*": ["util/*"],
+      "@services/*": ["services/*"],
       //   "@navigators/*": ["navigators/*"],
-      //   "@theme/*": ["theme/*"]
+       "@theme/*": ["theme/*"]
     }
   },
   "exclude": [

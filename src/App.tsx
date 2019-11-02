@@ -1,25 +1,13 @@
-import React, { useEffect } from "react";
-import { BackHandler, StatusBar } from "react-native";
-// @ts-ignore
-import { CLIENT_ID, CLIENT_SECRET } from "utils/Constants";
+import Theme from "@theme/Theme";
+import React from "react";
+import { StatusBar } from "react-native";
+import { ThemeProvider } from "styled-components";
 
 const App = () => {
-
-  useEffect(() => {
-
-    const backHandler = BackHandler.addEventListener("hardwareBackPress", handleBackPress);
-
-    return function cleanup() {
-      backHandler.remove();
-    };
-  });
-
-  const handleBackPress = () => {
-    return true;
-  };
-
   return (
-    <StatusBar barStyle="dark-content" />
+    <ThemeProvider theme={Theme}>
+     <StatusBar barStyle="dark-content" />
+    </ThemeProvider>
   );
 };
 
