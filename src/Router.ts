@@ -5,6 +5,8 @@ import { createStackNavigator } from "react-navigation-stack";
 const Router = createAppContainer(
   createStackNavigator({
     Welcome,
+  }, {
+    headerLayoutPreset: "center",
   })
 );
 
