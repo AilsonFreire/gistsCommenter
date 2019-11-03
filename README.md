@@ -10,7 +10,7 @@ Aplicativo feito em React-Native usando typescript e hooks.
 - Após isso, dependendo da plataforma use: "react-native run-android" ou react-native run-ios":smiley:
 - Com o aplicativo rondando, basta usar. A interface é bem intuitiva e você vai aprender rapidinho como user:raised_hands:
 
-## :star: O que esse faz?
+## :star: O que esse aplicativo faz?
 - Permite que você deixe comentários em qualquer gist que tenhe se interessado.
 - Copie a url do gist que você quer comentar e gere um QRCode dela.
 - Inicie o aplicativo e aponte o leitor para o QRCode gerado.
