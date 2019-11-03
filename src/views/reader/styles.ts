@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView, Text } from "react-native";
 import styled from "styled-components/native";
 
 interface IStyledProps {
