@@ -2,10 +2,11 @@ import { ButtonStart, ButtonText, Contaier, SafeArea, Typography } from "@views/
 import React, { useContext, useState } from "react";
 import { StatusBar } from "react-native";
 import QRCodeScanner from "react-native-qrcode-scanner";
-import { NavigationStackOptions } from "react-navigation-stack";
+import { NavigationRoute } from "react-navigation";
+import { NavigationStackOptions, NavigationStackProp } from "react-navigation-stack";
 import { ThemeContext } from "styled-components";
 
-const Reader = () => {
+const Reader = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute> }) => {
   const {
     colors: { secondaryColor },
   } = useContext(ThemeContext);
@@ -14,7 +15,9 @@ const Reader = () => {
 
   const onSuccess = async ({ data }: { data: string }) => {
     if (data.includes("https://gist.github.com/")) {
-      contentControl(true);
+      const parts = data.split("/");
+      const id = parts[parts.length - 1];
+      navigation.navigate("Gists", { id });
     } else {
       contentControl(false);
     }
