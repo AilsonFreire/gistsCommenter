@@ -1,11 +1,11 @@
 import { getGists } from "@services/gistsAPI/Gists";
 import { ButtonStart, ButtonText, Contaier, SafeArea, Typography } from "@views/welcome/styles";
 import React, { useContext, useEffect, useState } from "react";
-import { StatusBar, View } from "react-native";
+import { StatusBar, Alert } from "react-native";
 import { NavigationRoute, ScrollView } from "react-navigation";
 import { NavigationStackOptions, NavigationStackProp } from "react-navigation-stack";
 import { ThemeContext } from "styled-components";
-import { GistsContent } from "./styles";
+import { GistsContent, TextArea } from "./styles";
 
 const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute> }) => {
   const {
@@ -14,6 +14,7 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
 
   const [contentValue, screenContentControl] = useState(true);
   const [gistsContent, setGistContet] = useState("");
+  const [comment, setComment] = useState("");
 
   useEffect(() => {
     async function fetchGits() {
@@ -33,12 +34,32 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
     fetchGits();
   }, []);
 
+  const validateComment = (text: string): void => {
+    if (text !== "") {
+      setComment(text);
+    }
+  };
+
+  const submitComment = (): void => {
+    if (comment !== "") {
+    } else {
+      Alert.alert("Comentário não pode ser vazio");
+    }
+  };
+
   return (
     <SafeArea>
       <StatusBar backgroundColor={secondaryColor} barStyle="dark-content" />
       {contentValue ? (
         <ScrollView style={{ flex: 1 }}>
-          <GistsContent>{gistsContent}</GistsContent>
+          <Typography>Conteúdo</Typography>
+          <GistsContent>{gistsContent === "" ? "Carregando..." : gistsContent}</GistsContent>
+          <TextArea placeholder={"Digite seu comentário"} autoFocus={true} onChangeText={text => validateComment(text)} autoCapitalize="none" multiline={true} onSubmitEditing={submitComment} />
+          <Contaier>
+            <ButtonStart onPress={() => submitComment()}>
+              <ButtonText>Salvar</ButtonText>
+            </ButtonStart>
+          </Contaier>
         </ScrollView>
       ) : (
         <Contaier>
