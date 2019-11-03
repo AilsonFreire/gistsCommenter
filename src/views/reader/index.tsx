@@ -11,7 +11,7 @@ const Reader = ({ navigation }: { navigation: NavigationStackProp<NavigationRout
     colors: { secondaryColor },
   } = useContext(ThemeContext);
 
-  const [contentValue, contentControl] = useState(true);
+  const [contentValue, screenContentControl] = useState(true);
 
   const onSuccess = async ({ data }: { data: string }) => {
     if (data.includes("https://gist.github.com/")) {
@@ -19,7 +19,7 @@ const Reader = ({ navigation }: { navigation: NavigationStackProp<NavigationRout
       const id = parts[parts.length - 1];
       navigation.navigate("Gists", { id });
     } else {
-      contentControl(false);
+      screenContentControl(false);
     }
   };
 
@@ -34,7 +34,7 @@ const Reader = ({ navigation }: { navigation: NavigationStackProp<NavigationRout
       ) : (
         <Contaier>
           <Typography>Ops! Parece que a URL que você pesquisou não é válida.</Typography>
-          <ButtonStart onPress={() => contentControl(true)}>
+          <ButtonStart onPress={() => screenContentControl(true)}>
             <ButtonText>Começar</ButtonText>
           </ButtonStart>
         </Contaier>

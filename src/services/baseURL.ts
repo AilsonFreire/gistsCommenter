@@ -1,7 +1,7 @@
 import { create } from "apisauce";
 
 const api = create({
-  baseURL: "https://gist.github.com/",
+  baseURL: "https://api.github.com/",
 });
 
 api.addResponseTransform(response => {
