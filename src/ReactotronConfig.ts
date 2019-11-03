@@ -1,3 +1,4 @@
+// @ts-ignore
 import Reactotron from "reactotron-react-native";
 
 // @ts-ignore

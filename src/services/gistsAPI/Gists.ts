@@ -14,7 +14,7 @@ export const saveComment = async (email: string, passowrd: string, gistId: strin
   try {
     const body = JSON.stringify({ body: comment });
     api.setHeader("Authorization", `Basic ${btoa(email + ":" + passowrd)}`);
-    return await api.post(`gists/${gistId}`, body);
+    return await api.post(`gists/${gistId}/comments`, body);
   } catch (error) {
     return error;
   }

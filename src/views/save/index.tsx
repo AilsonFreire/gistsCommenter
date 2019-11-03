@@ -29,8 +29,10 @@ const Save = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute>
 
   const sendComment = async () => {
     const response = await saveComment(email, password, navigation.getParam("id"), navigation.getParam("comment"));
-    if (response.ok) {
+    if (!response.ok) {
       screenContentControl(false);
+    } else {
+      Alert.alert("Comemtário salvo com sucesso!", "", [{ text: "Voltar", onPress: () => navigation.navigate("Welcome") }], { cancelable: false });
     }
   };
 
