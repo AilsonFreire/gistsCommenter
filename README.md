@@ -15,7 +15,7 @@ Aplicativo feito em React-Native usando typescript e hooks.
 - Copie a url do gist que você quer comentar e gere um QRCode dela.
 - Inicie o aplicativo e aponte o leitor para o QRCode gerado.
 - Você verá o conteudo do Gists dentro do app e uma caixa de para deixar seu comentário.
-- Use suas credenciais válidas para salvar seu comentário.
+- Use suas credenciais válidas da sua conta do GitHub para salvar seu comentário.
 - Pronto.
 
 Dúvidas? Sugestões? São muito bem-vidas!
