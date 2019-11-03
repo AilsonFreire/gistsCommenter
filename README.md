@@ -8,7 +8,7 @@ Aplicativo feito em React-Native usando typescript e hooks.
 - Clone este repositório para sua máquina:sparkles:
 - Dentro da pasta de o comando "yarn" :smiley:
 - Após isso, dependendo da plataforma use: "react-native run-android" ou react-native run-ios":smiley:
-- Com o aplicativo rondando, basta usar. A interface é bem intuitiva e você vai aprender rapidinho como user:raised_hands:
+- Com o aplicativo rondando, basta usar. A interface é bem intuitiva e você vai aprender rapidinho como usr:raised_hands:
 
 ## :star: O que esse aplicativo faz?
 - Permite que você deixe comentários em qualquer gist que tenhe se interessado.
