@@ -40,7 +40,7 @@ const Save = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute>
     <>
       {contentValue ? (
         <>
-          <Typography>Para salvar seu comentário, você precisa se autenticar*</Typography>
+          <Typography>Para salvar seu comentário, você precisa se autenticar com sua conta do GitHub*</Typography>
           <Input placeholder="Email" autoCapitalize="none" autoFocus={true} autoCorrect={false} keyboardType="email-address" onChangeText={text => handleEmail(text)} />
           <Input placeholder="Senha" autoCorrect={false} autoCapitalize="none" secureTextEntry={true} returnKeyType="go" onChangeText={text => handlePassword(text)} onSubmitEditing={() => validateUser()} />
           <Contaier>
