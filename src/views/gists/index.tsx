@@ -1,7 +1,7 @@
 import { getGists } from "@services/gistsAPI/Gists";
 import { ButtonStart, ButtonText, Contaier, SafeArea, Typography } from "@views/welcome/styles";
 import React, { useContext, useEffect, useState } from "react";
-import { StatusBar, Alert } from "react-native";
+import { Alert, StatusBar } from "react-native";
 import { NavigationRoute, ScrollView } from "react-navigation";
 import { NavigationStackOptions, NavigationStackProp } from "react-navigation-stack";
 import { ThemeContext } from "styled-components";
@@ -27,6 +27,7 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
         } = response;
 
         const key = Object.keys(files);
+        // @ts-ignore
         setGistContet(files[key].content);
       }
     }
@@ -42,6 +43,7 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
 
   const submitComment = (): void => {
     if (comment !== "") {
+      navigation.navigate("Save", { comment, id: navigation.getParam("id") });
     } else {
       Alert.alert("Comentário não pode ser vazio");
     }
@@ -54,10 +56,10 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
         <ScrollView style={{ flex: 1 }}>
           <Typography>Conteúdo</Typography>
           <GistsContent>{gistsContent === "" ? "Carregando..." : gistsContent}</GistsContent>
-          <TextArea placeholder={"Digite seu comentário"} autoFocus={true} onChangeText={text => validateComment(text)} autoCapitalize="none" multiline={true} onSubmitEditing={submitComment} />
+          <TextArea autoCorrect={false} returnKeyType={"go"} placeholder={"Digite seu comentário"} autoFocus={true} onChangeText={text => validateComment(text)} autoCapitalize="none" multiline={true} onSubmitEditing={() => submitComment()} />
           <Contaier>
             <ButtonStart onPress={() => submitComment()}>
-              <ButtonText>Salvar</ButtonText>
+              <ButtonText>Próximo</ButtonText>
             </ButtonStart>
           </Contaier>
         </ScrollView>
