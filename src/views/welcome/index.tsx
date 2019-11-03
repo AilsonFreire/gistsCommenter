@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { StatusBar, View } from "react-native";
+import { StatusBar } from "react-native";
 import SplashScreen from "react-native-splash-screen";
 import { NavigationRoute } from "react-navigation";
 import { NavigationStackOptions, NavigationStackProp } from "react-navigation-stack";
