@@ -4,7 +4,7 @@ import SplashScreen from "react-native-splash-screen";
 import { NavigationRoute } from "react-navigation";
 import { NavigationStackOptions, NavigationStackProp } from "react-navigation-stack";
 import { ThemeContext } from "styled-components";
-import { ButtonStart, Contaier, GitImage, SafeArea, Typography, ButtonText } from "./styles";
+import { ButtonStart, ButtonText, Contaier, GitImage, SafeArea, Typography } from "./styles";
 
 const GIT_IMAGE = require("../../../assets/images/git.png");
 
@@ -23,7 +23,7 @@ const Welcome = ({ navigation }: { navigation: NavigationStackProp<NavigationRou
       <Contaier>
         <GitImage source={GIT_IMAGE} />
         <Typography>Crie comentários nos Gists que você se interessou!</Typography>
-        <ButtonStart>
+        <ButtonStart onPress={() => navigation.navigate("Reader")}>
           <ButtonText>Começar</ButtonText>
         </ButtonStart>
       </Contaier>
