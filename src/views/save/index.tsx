@@ -51,19 +51,19 @@ const Save = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute>
           </Contaier>
         </>
       ) : (
-        <Contaier>
-          <Typography>Erro ao salvar seu comentário.</Typography>
-          <ButtonStart
-            onPress={() => {
-              screenContentControl(true);
-              setEmai("");
-              setPassword("");
-            }}
-          >
-            <ButtonText>Tentar Novamente</ButtonText>
-          </ButtonStart>
-        </Contaier>
-      )}
+          <Contaier>
+            <Typography>Erro ao salvar seu comentário.</Typography>
+            <ButtonStart
+              onPress={() => {
+                screenContentControl(true);
+                setEmai("");
+                setPassword("");
+              }}
+            >
+              <ButtonText>Tentar Novamente</ButtonText>
+            </ButtonStart>
+          </Contaier>
+        )}
     </>
   );
 };
@@ -81,7 +81,7 @@ Save.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Salvar",
     headerTitleStyle: {
-      fontFamily: "SFNSDisplay-Bold",
+      fontFamily: "SF-UI-Display-Bold",
     },
   };
 };

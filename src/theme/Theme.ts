@@ -1,4 +1,4 @@
-export default  {
+export default {
     colors: {
         buttonColor: "#32CC56",
         primaryColor: "#24292E",
@@ -6,6 +6,6 @@ export default  {
         terciaryColor: "#0366D6",
     },
     fonts: {
-        primaryFont: "SFNSDisplay-Bold"
+        primaryFont: "SF-UI-Display-Bold"
     }
 };

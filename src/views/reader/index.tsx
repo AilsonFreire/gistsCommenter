@@ -32,13 +32,13 @@ const Reader = ({ navigation }: { navigation: NavigationStackProp<NavigationRout
           <QRCodeScanner onRead={onSuccess} showMarker={true} checkAndroid6Permissions={true} />
         </>
       ) : (
-        <Contaier>
-          <Typography>Ops! Parece que a URL que você pesquisou não é válida.</Typography>
-          <ButtonStart onPress={() => screenContentControl(true)}>
-            <ButtonText>Começar</ButtonText>
-          </ButtonStart>
-        </Contaier>
-      )}
+          <Contaier>
+            <Typography>Ops! Parece que a URL que você pesquisou não é válida.</Typography>
+            <ButtonStart onPress={() => screenContentControl(true)}>
+              <ButtonText>Começar</ButtonText>
+            </ButtonStart>
+          </Contaier>
+        )}
     </SafeArea>
   );
 };
@@ -56,7 +56,7 @@ Reader.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Leitor",
     headerTitleStyle: {
-      fontFamily: "SFNSDisplay-Bold",
+      fontFamily: "SF-UI-Display-Bold",
     },
   };
 };

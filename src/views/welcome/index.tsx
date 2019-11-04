@@ -44,7 +44,7 @@ Welcome.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Bem-vindo",
     headerTitleStyle: {
-      fontFamily: "SFNSDisplay-Bold",
+      fontFamily: "SF-UI-Display-Bold",
     },
   };
 };

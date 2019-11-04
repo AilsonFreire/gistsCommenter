@@ -56,6 +56,14 @@ PODS:
     - React-cxxreact (= 0.60.5)
     - React-jsi (= 0.60.5)
   - React-jsinspector (0.60.5)
+  - react-native-camera (3.8.0):
+    - React
+    - react-native-camera/RCT (= 3.8.0)
+    - react-native-camera/RN (= 3.8.0)
+  - react-native-camera/RCT (3.8.0):
+    - React
+  - react-native-camera/RN (3.8.0):
+    - React
   - react-native-splash-screen (3.2.0):
     - React
   - React-RCTActionSheet (0.60.5):
@@ -83,6 +91,14 @@ PODS:
     - React-Core (= 0.60.5)
   - RNCAsyncStorage (1.6.2):
     - React
+  - RNGestureHandler (1.5.0):
+    - React
+  - RNPermissions (2.0.3):
+    - React
+  - RNReanimated (1.4.0):
+    - React
+  - RNScreens (1.0.0-alpha.23):
+    - React
   - yoga (0.60.5.React)
 
 DEPENDENCIES:
@@ -96,6 +112,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -108,6 +125,10 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-community/async-storage`)"
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNPermissions (from `../node_modules/react-native-permissions`)
+  - RNReanimated (from `../node_modules/react-native-reanimated`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -135,6 +156,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-camera:
+    :path: "../node_modules/react-native-camera"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
   React-RCTActionSheet:
@@ -159,6 +182,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-community/async-storage"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
+  RNPermissions:
+    :path: "../node_modules/react-native-permissions"
+  RNReanimated:
+    :path: "../node_modules/react-native-reanimated"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -174,6 +205,7 @@ SPEC CHECKSUMS:
   React-jsi: 4d8c9efb6312a9725b18d6fc818ffc103f60fec2
   React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
   React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
+  react-native-camera: 21cf4ed26cf432ceb1fae959aa6924943fd6f714
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
   React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
@@ -186,8 +218,12 @@ SPEC CHECKSUMS:
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNCAsyncStorage: 60a80e72d95bf02a01cace55d3697d9724f0d77f
+  RNGestureHandler: a4ddde1ffc6e590c8127b8b7eabfdade45475c74
+  RNPermissions: 9e437a90de84a5402ff689d4da233730b81556c2
+  RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
+  RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: ff06b91a2aaa594363d62c5b0bde770bb7714ea4
+PODFILE CHECKSUM: 997236d0a5266d38ad4f0a847c4a710bdf71dd98
 
 COCOAPODS: 1.8.4

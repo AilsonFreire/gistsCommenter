@@ -64,18 +64,18 @@ const Gists = ({ navigation }: { navigation: NavigationStackProp<NavigationRoute
           </Contaier>
         </ScrollView>
       ) : (
-        <Contaier>
-          <Typography>Ops! Não foi possível acessar esse Gits.</Typography>
-          <ButtonStart
-            onPress={() => {
-              navigation.navigate("Welcome");
-              screenContentControl(true);
-            }}
-          >
-            <ButtonText>Tentar Novamente</ButtonText>
-          </ButtonStart>
-        </Contaier>
-      )}
+          <Contaier>
+            <Typography>Ops! Não foi possível acessar esse Gits.</Typography>
+            <ButtonStart
+              onPress={() => {
+                navigation.navigate("Welcome");
+                screenContentControl(true);
+              }}
+            >
+              <ButtonText>Tentar Novamente</ButtonText>
+            </ButtonStart>
+          </Contaier>
+        )}
     </SafeArea>
   );
 };
@@ -93,7 +93,7 @@ Gists.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Gists",
     headerTitleStyle: {
-      fontFamily: "SFNSDisplay-Bold",
+      fontFamily: "SF-UI-Display-Bold",
     },
   };
 };

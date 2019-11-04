@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -19,7 +20,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
 		33E890B40E9F2BBE192D4509 /* libPods-CommentGists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */; };
 		3A7D8E11CC1AAD04CB3EBCAC /* libPods-CommentGists-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB00FD80B8C3DAB0A283C5A /* libPods-CommentGists-tvOSTests.a */; };
-		CD48A5C1C13E43BCB913F671 /* SFNSDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */; };
+		FB1A46F61601425599E0F5FF /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		38A5DF9DFF8671DA1DFA3AAC /* Pods-CommentGistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGistsTests.debug.xcconfig"; path = "Target Support Files/Pods-CommentGistsTests/Pods-CommentGistsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42FF99169636B6A9FE955A71 /* Pods-CommentGists-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CommentGists-tvOSTests/Pods-CommentGists-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A8583CF6DFC4DFB9B16180B /* OAuthManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = OAuthManager.xcodeproj; path = "../node_modules/react-native-oauth/ios/OAuthManager.xcodeproj"; sourceTree = "<group>"; };
+		8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Bold.otf"; path = "../assets/fonts/SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
 		9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommentGists.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1D09FC45F14F2988E091A0 /* libOAuthManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libOAuthManager.a; sourceTree = "<group>"; };
 		9F8237DAC4FC5B73E77089C8 /* Pods-CommentGists-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CommentGists-tvOS/Pods-CommentGists-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +79,6 @@
 		CEE0FB19A992ACAF4FFA5274 /* Pods-CommentGists.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists.release.xcconfig"; path = "Target Support Files/Pods-CommentGists/Pods-CommentGists.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */ = {isa = PBXFileReference; name = "SFNSDisplay-Bold.ttf"; path = "../assets/fonts/SFNSDisplay-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,13 +230,12 @@
 			sourceTree = "<group>";
 		};
 		F6AE253E0B754D8CA2E9B9C4 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
-				B60E38EE9EAC4B54B3335F3A /* SFNSDisplay-Bold.ttf */,
+				8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -397,7 +397,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				CD48A5C1C13E43BCB913F671 /* SFNSDisplay-Bold.ttf in Resources */,
+				FB1A46F61601425599E0F5FF /* SF-UI-Display-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
