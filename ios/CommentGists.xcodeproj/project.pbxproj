@@ -20,7 +20,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* CommentGistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CommentGistsTests.m */; };
 		33E890B40E9F2BBE192D4509 /* libPods-CommentGists.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */; };
 		3A7D8E11CC1AAD04CB3EBCAC /* libPods-CommentGists-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB00FD80B8C3DAB0A283C5A /* libPods-CommentGists-tvOSTests.a */; };
-		FB1A46F61601425599E0F5FF /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */; };
+		F77952D6D00C450ABD8092CF /* SFUIDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85C02E0C48034F98AF1C7D26 /* SFUIDisplay-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +66,8 @@
 		2D02E4901E0B4A5D006451C7 /* CommentGists-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CommentGists-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A5DF9DFF8671DA1DFA3AAC /* Pods-CommentGistsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGistsTests.debug.xcconfig"; path = "Target Support Files/Pods-CommentGistsTests/Pods-CommentGistsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		42FF99169636B6A9FE955A71 /* Pods-CommentGists-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-CommentGists-tvOSTests/Pods-CommentGists-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		85C02E0C48034F98AF1C7D26 /* SFUIDisplay-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIDisplay-Bold.otf"; path = "../assets/fonts/SFUIDisplay-Bold.otf"; sourceTree = "<group>"; };
 		8A8583CF6DFC4DFB9B16180B /* OAuthManager.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = OAuthManager.xcodeproj; path = "../node_modules/react-native-oauth/ios/OAuthManager.xcodeproj"; sourceTree = "<group>"; };
-		8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Display-Bold.otf"; path = "../assets/fonts/SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
 		9A131D8ED5106BD3254A47BB /* libPods-CommentGists.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommentGists.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1D09FC45F14F2988E091A0 /* libOAuthManager.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libOAuthManager.a; sourceTree = "<group>"; };
 		9F8237DAC4FC5B73E77089C8 /* Pods-CommentGists-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommentGists-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-CommentGists-tvOS/Pods-CommentGists-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 		F6AE253E0B754D8CA2E9B9C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8DEDC61560784DCAA32BD093 /* SF-UI-Display-Bold.otf */,
+				85C02E0C48034F98AF1C7D26 /* SFUIDisplay-Bold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				FB1A46F61601425599E0F5FF /* SF-UI-Display-Bold.otf in Resources */,
+				F77952D6D00C450ABD8092CF /* SFUIDisplay-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +431,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;

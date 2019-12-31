@@ -81,7 +81,7 @@ Save.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Salvar",
     headerTitleStyle: {
-      fontFamily: "SF-UI-Display-Bold",
+      fontFamily: "SFUIDisplay-Bold",
     },
   };
 };

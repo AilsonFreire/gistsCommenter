@@ -6,6 +6,6 @@ export default {
         terciaryColor: "#0366D6",
     },
     fonts: {
-        primaryFont: "SF-UI-Display-Bold"
+        primaryFont: "SFUIDisplay-Bold"
     }
 };

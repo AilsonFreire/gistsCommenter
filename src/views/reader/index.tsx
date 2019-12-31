@@ -56,7 +56,7 @@ Reader.navigationOptions = (): NavigationStackOptions => {
     },
     headerTitle: "Leitor",
     headerTitleStyle: {
-      fontFamily: "SF-UI-Display-Bold",
+      fontFamily: "SFUIDisplay-Bold",
     },
   };
 };
